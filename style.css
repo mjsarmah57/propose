@@ -1,0 +1,149 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light grey background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    color: #e91e63; /* Romantic pink/red color */
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+section h2 {
+    color: #e91e63;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2.2em;
+    border-bottom: 2px solid #fce4ec; /* Light pink underline */
+    padding-bottom: 10px;
+    display: inline-block; /* To make border fit text width */
+}
+
+.story p, .proposal p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.proposal-text {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.will-you {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e91e63;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.options button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e91e63;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.options button:hover {
+    background-color: #d11a5a; /* Darker pink on hover */
+}
+
+.options button#noButton {
+    background-color: #aaa; /* Greyish "No" button */
+    color: white;
+    font-size: 0.9em; /* Slightly smaller */
+    padding: 8px 15px; /* Adjust padding */
+}
+
+.options button#noButton:hover {
+    background-color: #888; /* Darker grey on hover */
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images */
+    gap: 15px; /* Spacing between images */
+}
+
+.image-gallery img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Indicate clickability if you add lightbox functionality */
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 30px;
+        margin: 10px;
+    }
+    header h1 {
+        font-size: 2.8em;
+    }
+    section h2 {
+        font-size: 2em;
+    }
+    .story p, .proposal p {
+        font-size: 1em;
+    }
+    .proposal-text {
+        font-size: 1.1em;
+    }
+    .will-you {
+        font-size: 1.3em;
+    }
+    .options button {
+        padding: 10px 20px;
+        font-size: 1em;
+        margin: 5px;
+    }
+}
